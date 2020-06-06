@@ -1,7 +1,7 @@
 import cv2
-from pyzbar.pyzbar import decode  #decode as we want to decode our code i.e qr code
+from pyzbar.pyzbar import decode  
 
-capture = cv2.VideoCapture(0)  # 0 for default camer telling python to capture video
+capture = cv2.VideoCapture(0) 
 
 recieved_data = None
 while True:
@@ -18,7 +18,7 @@ while True:
 
 	cv2.imshow('QR Code Scanner', frame)
 
-	key = cv2.waitKey(1) 		#wait for 1 mili second
+	key = cv2.waitKey(1)  
 
-	if key == 27:   	#27 foe escape button
+	if key == 27:   
 		break
